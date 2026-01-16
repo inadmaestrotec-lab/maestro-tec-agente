@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Agente IA – Maestro TEC</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f9ff;
+      padding: 20px;
+    }
+    h1 {
+      color: #1e88e5;
+    }
+    button {
+      background: #fbc02d;
+      border: none;
+      padding: 10px 16px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+    textarea, input {
+      width: 100%;
+      margin-top: 8px;
+      padding: 8px;
+    }
+    .box {
+      background: white;
+      padding: 16px;
+      border-radius: 8px;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>🤖 Agente IA – Maestro TEC</h1>
+<p><strong>Simplificamos la tecnología para empoderar a los maestros en el aula.</strong></p>
+
+<div class="box">
+  <label>Nivel educativo:</label>
+  <input id="nivel" placeholder="Ej. Secundaria" />
+
+  <label>Área:</label>
+  <input id="area" placeholder="Ej. Ciencia y Tecnología" />
+
+  <label>Tema:</label>
+  <input id="tema" placeholder="Ej. Fuerzas" />
+
+  <label>Duración:</label>
+  <input id="tiempo" placeholder="Ej. 90 minutos" />
+
+  <button onclick="generarSesion()">Generar sesión</button>
+</div>
+
+<div class="box" id="resultado"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
